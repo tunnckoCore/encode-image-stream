@@ -1,6 +1,6 @@
 {
   "name": "encode-image-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Encode image to base64 string, just encode. ~20 sloc.",
   "repository": "tunnckoCore/encode-image-stream",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
