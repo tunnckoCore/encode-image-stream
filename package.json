@@ -19,5 +19,10 @@
   "files": [
     "index.js"
   ],
-  "keywords": []
+  "keywords": [
+    "base64",
+    "encode",
+    "image",
+    "stream"
+  ]
 }
