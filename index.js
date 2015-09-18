@@ -13,7 +13,7 @@ module.exports = function encodeImage () {
   var last = null
   return through2(function (chunk, enc, next) {
     chunk = last ? Buffer.concat([last, chunk]) : chunk
-    last = last || null
+    last = last ? null : last
 
     var len = chunk.length
     var remaining = len % 3

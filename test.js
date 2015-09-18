@@ -25,6 +25,28 @@ test('encode-image-stream works for images', function (done) {
       done()
     }))
 })
+
+test('works correctly when writing to html <img>', function (done) {
+  var w = fs.createWriteStream('foo.html')
+  w.write('<img src="data:image/png;base64,')
+  w.on('close', function () {
+    var data = fs.readFileSync('foo.html')
+    test.ok(data.indexOf('<img src="data:image/png;base64,') !== -1)
+    test.ok(data.indexOf('UAwAAAABJRU5ErkJggg==">') !== -1)
+    done()
+  })
+
+  fs.createReadStream('./foo.png')
+    .pipe(encodeImageStream())
+    .pipe(through2(function (chunk, enc, callback) {
+      callback(null, chunk)
+    }, function (cb) {
+      this.push('">')
+      cb()
+    }))
+    .pipe(w)
+})
+
 test('should encode other files, but not correctly', function (done) {
   var chunks = []
   fs.createReadStream('./index.js')
