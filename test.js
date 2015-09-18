@@ -30,7 +30,7 @@ test('works correctly when writing to html <img>', function (done) {
   var w = fs.createWriteStream('foo.html')
   w.write('<img src="data:image/png;base64,')
   w.on('close', function () {
-    var data = fs.readFileSync('foo.html')
+    var data = fs.readFileSync('foo.html', 'utf-8')
     test.ok(data.indexOf('<img src="data:image/png;base64,') !== -1)
     test.ok(data.indexOf('UAwAAAABJRU5ErkJggg==">') !== -1)
     done()
