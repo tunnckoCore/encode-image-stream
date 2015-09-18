@@ -27,6 +27,12 @@ fs.createReadStream('./foo.png')
 ```
 
 
+## Related
+- [generate](https://github.com/generate/generate): Project generator, for node.js.
+- [gulp-micromatch](https://github.com/tunnckocore/gulp-micromatch): Filter vinyl files with glob patterns, string, regexp, array, object or matcher function. micromatch stream.
+- [read-source-stream](https://github.com/tunnckocore/read-source-stream): Streaming read of local file or remote url.
+
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/encode-image-stream/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
@@ -78,5 +84,5 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [freenode-url]: http://webchat.freenode.net/?channels=charlike
 [freenode-img]: https://img.shields.io/badge/freenode-%23charlike-5654a4.svg
 
-[new-message-url]: https://github.com/tunnckoCore/messages
+[new-message-url]: https://github.com/tunnckoCore/ama
 [new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
