@@ -11,10 +11,6 @@ notifications:
     on_success: never
     on_failure: never
 
-before_script:
-  - npm install standard
-  - standard
-
 script:
   - npm install istanbul-harmony
   - node --harmony node_modules/.bin/istanbul cover test.js
