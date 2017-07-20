@@ -13,8 +13,8 @@
     "through2": "^2.0.0"
   },
   "devDependencies": {
-    "assertit": "^0.1.0",
-    "concat-stream": "^1.5.0",
+    "assertit": "0.1.0",
+    "concat-stream": "1.6.0",
     "standard": "10.0.2"
   },
   "files": [
